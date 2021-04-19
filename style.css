@@ -1,0 +1,165 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  color: #273542;
+  padding: 5px;
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlcF2wQol3wcaqmb13gj2qAfuwyQN6CVBNGA&usqp=CAU)
+    center/ cover;
+  padding: 10px;
+}
+h1 {
+  font-family: "Zhi Mang Xing", cursive;
+}
+.websitetitle {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 5px;
+  align-items: center;
+}
+.websitetitle img {
+  border-radius: 50%;
+}
+.headermenu {
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-items: right;
+  gap: 5px;
+}
+.headermenu nav {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.socialmedias img {
+  width: 30px;
+  margin-right: 20px;
+}
+nav li {
+  list-style: none;
+  cursor: pointer;
+}
+.menu {
+  transform: translateY(5px);
+}
+.menu li:not(.downelement) {
+  display: inline;
+  margin-right: 20px;
+}
+.menu li:not(.downelement, .offer):hover {
+  border-bottom: 2px solid #273542;
+  padding: 5px 0px;
+  transition: 0.2s ease-in-out;
+}
+.offer {
+  position: relative;
+  padding: 10px;
+}
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 10px;
+  display: grid;
+  gap: 6px;
+  border: 2px solid #273542;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  visibility: hidden;
+  height: 120px;
+  width: 140px;
+  padding: 10px;
+  background-color: white;
+}
+.offer:hover > .dropdown {
+  visibility: visible;
+}
+.dropdown a:hover {
+  color: #388a9a;
+  background-color: #eaf3f0;
+  padding: 2px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: inherit;
+}
+nav img {
+  margin-right: 20px;
+  border-radius: 50%;
+  border: 2px solid #273542;
+  padding: 3px;
+  background-color: white;
+  display: none;
+}
+header button {
+  background-color: #c6e4ee;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  width: 80px;
+  margin-right: 15px;
+}
+header button:hover {
+  background-color: #ec6caa;
+  color: white;
+}
+/* header complete */
+.promote {
+  position: relative;
+  z-index: -1;
+}
+video {
+  width: 100vw;
+  box-shadow: 0px 0px 10px 0px ivory;
+}
+.wrapper-promote {
+  position: absolute;
+  top: 100px;
+  left: 30px;
+  color: ivory;
+  text-shadow: 1px 1px 1px #273542;
+}
+.wrapper-promote h2 {
+  width: 600px;
+  margin-bottom: 30px;
+}
+.wrapper-promote p {
+  line-height: 30px;
+  font-size: 1.2rem;
+}
+.wrapper-promote a {
+  margin-top: 20px;
+  color: inherit;
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 300px;
+  align-items: center;
+  transition: 0.2s ease-in-out;
+}
+.wrapper-promote a img {
+  width: 40px;
+  border-radius: 50%;
+}
+.wrapper-promote a:hover {
+  filter: invert(30%);
+  transform: scale(1.12) translateX(20px);
+}
+@media screen and (max-width: 910px) {
+  nav ul,
+  nav button {
+    display: none;
+  }
+  nav img {
+    display: block;
+  }
+  @media screen and (max-width: 710px) {
+    .wrapper-promote {
+      display: none;
+    }
+  }
+}
