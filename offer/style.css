@@ -1,0 +1,271 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html {
+  --background-color: #f3f3f3;
+  --darktext-color: #273542;
+  --lighttext-color: #c4e5ee;
+}
+header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  color: #273542;
+  padding: 5px;
+  background-color: #f3f3f350;
+  padding: 10px;
+  width: 100vw;
+  top: 0px;
+  z-index: 3;
+}
+h1 {
+  font-family: "Zhi Mang Xing", cursive;
+}
+.websitetitle {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 5px;
+  align-items: center;
+}
+.websitetitle img {
+  border-radius: 50%;
+}
+.headermenu {
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-items: right;
+  gap: 5px;
+}
+.headermenu nav {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.socialmedias img {
+  width: 30px;
+  margin-right: 20px;
+  transition: 0.2s ease-out;
+}
+.socialmedias img:hover {
+  transform: rotate(20deg) scale(1.1);
+}
+nav li {
+  list-style: none;
+  cursor: pointer;
+}
+.menu {
+  transform: translateY(5px);
+}
+.menu li:not(.downelement, .downelementtwo) {
+  display: inline;
+}
+.menu .us {
+  margin-right: 25px;
+}
+.home {
+  margin-right: 15px;
+}
+.us:hover,
+.home:hover {
+  border-bottom: 2px solid #273542;
+  padding: 5px 0px;
+  transition: 0.2s ease-in-out;
+}
+.offer,
+.travelguide {
+  padding: 10px;
+  transition: 0.2s ease;
+}
+.travelguide {
+  margin-right: 10px;
+}
+.dropdown {
+  position: fixed;
+  top: 100%;
+  left: 70px;
+  display: grid;
+  gap: 6px;
+  border: 2px solid #273542;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  height: 90px;
+  width: 140px;
+  padding: 10px;
+  background-color: white;
+  transition: 0.2s ease-in-out;
+  opacity: 0;
+}
+.dropdowntwo {
+  position: fixed;
+  top: 100%;
+  left: 200px;
+  display: grid;
+  gap: 6px;
+  border: 2px solid #273542;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+  background-color: white;
+  transition: 0.2s ease-in-out;
+  opacity: 0;
+}
+.offer:hover > .dropdown,
+.travelguide:hover > .dropdowntwo {
+  transition: 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.dropdown a:hover,
+.dropdowntwo a:hover {
+  color: #388a9a;
+  background-color: #eaf3f0;
+  padding: 2px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: inherit;
+}
+nav img {
+  margin-right: 20px;
+  border-radius: 50%;
+  border: 2px solid #273542;
+  padding: 3px;
+  background-color: white;
+  display: none;
+}
+header button {
+  background-color: transparent;
+  padding: 5px 10px;
+  border: 2px solid #273542;
+  border-radius: 10px;
+  width: 80px;
+  margin-right: 15px;
+  transition: ease-in-out 0.2s;
+}
+header button a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+header button:hover {
+  background-color: #ec6caa;
+  color: white;
+  border: none;
+}
+/* header finished */
+.overview {
+  background: no-repeat
+    url(https://wallpaper-house.com/data/out/8/wallpaper2you_288756.jpg);
+  padding: 30px;
+  color: var(--lighttext-color);
+  display: grid;
+  gap: 15px;
+  justify-content: flex-start;
+}
+.overview p {
+  width: 600px;
+}
+.overview ul {
+  justify-self: left;
+  padding: 20px;
+  border-radius: 20px;
+}
+.overview ul span {
+  font-size: 1.2rem;
+  padding: 5px 15px;
+  border-radius: 10px;
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREoSALtQtavhtvm9FjSsNoi7QQogvJ_rWYiw&usqp=CAU);
+  color: whitesmoke;
+}
+.overview li {
+  list-style: none;
+  margin-top: 5px;
+  transform: translateY(14px);
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+  transition: ease-in-out 0.2s;
+}
+.overview li a {
+  color: inherit;
+  text-decoration: none;
+}
+.overview li:hover {
+  transform: scale(1.05) translateY(10px);
+}
+.overview li img {
+  height: 32px;
+  width: 32px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+}
+/* overview finished */
+.section {
+  padding: 40px;
+  color: var(--darktext-color);
+}
+.section p:not(.wrapper p) {
+  max-width: 800px;
+}
+.section li {
+  list-style: none;
+}
+/* common section end */
+.online {
+  display: grid;
+  gap: 20px;
+  padding: 40px;
+  background-color: var(--background-color);
+}
+
+.online h3 {
+  display: grid;
+  grid-template-columns: 150px 60px auto;
+  align-items: center;
+}
+.online h3 img {
+  height: 50px;
+  width: 50px;
+  border-radius: 10%;
+}
+.online h3 span {
+  color: darkslategrey;
+}
+/* online section finished */
+
+/* .experience-card  */
+.experience-card {
+  width: 300px;
+  display: grid;
+  gap: 10px;
+  padding: 20px;
+  border: 2px solid var(--darktext-color);
+  border-radius: 20px;
+}
+.experience-card li {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  margin: 10px 0px;
+  align-items: center;
+}
+.svgs {
+  height: 20px;
+  width: 20px;
+}
+
+@media screen and (max-width: 910px) {
+  nav ul,
+  nav button {
+    display: none;
+  }
+  nav img {
+    display: block;
+  }
+}
