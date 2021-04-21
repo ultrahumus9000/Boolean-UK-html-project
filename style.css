@@ -9,6 +9,9 @@ html {
   --darktext-color: #273542;
   --lighttext-color: #c4e5ee;
 }
+body {
+  cursor: url(pandacursor.png), auto;
+}
 header {
   display: grid;
   grid-template-columns: auto 1fr;

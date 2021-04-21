@@ -308,10 +308,23 @@ header button:hover {
   border: 4px solid snow;
   border-radius: 20px;
 }
+
 .hotel-card {
   display: grid;
   grid-template-columns: 350px 350px 350px;
   margin-top: 30px;
+}
+.hotel-card div {
+  display: grid;
+  gap: 5px;
+  justify-items: center;
+}
+.hotel-card span {
+  background: linear-gradient(45deg, pink, blue);
+  color: #eaf3f0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: fit-content;
 }
 
 .hotel-one {
@@ -324,7 +337,19 @@ header button:hover {
 .hotel-three {
   transform: translate(-100px, -60px);
 }
-. @media screen and (max-width: 910px) {
+.hotel-card img:hover {
+  transform: scale(1.2);
+  transition: 0.2s ease-in-out;
+}
+.copyright {
+  color: #d5eded;
+  padding: 10px;
+  background-color: #27354090;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 0.8rem;
+}
+@media screen and (max-width: 910px) {
   nav ul,
   nav button {
     display: none;
@@ -336,5 +361,8 @@ header button:hover {
     display: grid;
     grid-template-columns: auto;
     gap: 10px;
+  }
+  .hotel-card {
+    display: none;
   }
 }
