@@ -157,3 +157,12 @@ header button:hover {
   border: none;
 }
 /* header finished */
+@media screen and (max-width: 1350px) {
+  nav ul,
+  nav button {
+    display: none;
+  }
+  nav img {
+    display: block;
+  }
+}
