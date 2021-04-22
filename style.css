@@ -313,6 +313,7 @@ video {
 .shanghai {
   object-position: 0px -100px;
 }
+/* travel plan finished */
 .testmonial {
   height: fit-content;
   background: no-repeat url(image/test.png),
@@ -335,7 +336,7 @@ video {
   display: grid;
   gap: 10px;
   position: relative;
-  margin-left: 700px;
+  left: 25vw;
 }
 .test {
   display: grid;
@@ -452,7 +453,7 @@ footer div {
   font-weight: lighter;
   font-size: 0.8rem;
 }
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 1024px) {
   nav ul,
   nav button {
     display: none;
@@ -465,8 +466,9 @@ footer div {
     grid-template-columns: repeat(auto-fit, 300px);
   }
   .test-card {
-    margin-left: 200px;
+    margin-left: 5vw;
   }
+
   footer {
     filter: brightness(1.2);
   }
@@ -475,12 +477,12 @@ footer div {
     padding: 5px;
     border-radius: 5px;
   }
-  @media screen and (max-width: 710px) {
+  @media screen and (max-width: 990px) {
     .wrapper-promote {
       display: none;
     }
     .test-card {
-      margin-left: 0px;
+      margin-right: 10vw;
     }
   }
 }

@@ -357,6 +357,15 @@ header button:hover {
   transform: scale(1.2);
   transition: 0.2s ease-in-out;
 }
+.hotel-two:hover {
+  z-index: 1;
+}
+.hotel-one:hover span,
+.hotel-two:hover span,
+.hotel-three:hover span {
+  transform: translateY(30px);
+  transition: 0.2s ease-in-out;
+}
 .copyright {
   color: #d5eded;
   padding: 10px;
@@ -365,7 +374,7 @@ header button:hover {
   font-weight: lighter;
   font-size: 0.8rem;
 }
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 1350px) {
   nav ul,
   nav button {
     display: none;
@@ -377,8 +386,12 @@ header button:hover {
     display: grid;
     grid-template-columns: auto;
     gap: 10px;
+    justify-content: center;
   }
-  .hotel-card {
-    display: none;
+  .hotels {
+    overflow-x: scroll;
+  }
+  .hotels img {
+    transform: scale(0.85);
   }
 }
