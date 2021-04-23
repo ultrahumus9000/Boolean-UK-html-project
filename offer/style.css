@@ -77,6 +77,10 @@ nav li {
   padding: 10px;
   transition: 0.2s ease;
 }
+#offertag {
+  background-color: #7fffd450;
+  border-radius: 10px;
+}
 .travelguide {
   margin-right: 10px;
 }
@@ -158,8 +162,7 @@ header button:hover {
 }
 /* header finished */
 .overview {
-  background: no-repeat
-    url(https://wallpaper-house.com/data/out/8/wallpaper2you_288756.jpg);
+  background: no-repeat url(../image/fishbackground.jpeg);
   padding: 30px;
   color: var(--lighttext-color);
   display: grid;
@@ -219,16 +222,19 @@ header button:hover {
 }
 /* common section end */
 .online {
-  display: grid;
-  gap: 20px;
   padding: 40px;
-  background: no-repeat
-    url(https://lh3.googleusercontent.com/proxy/f59rRI_Dp3W1RpkqWPQF25w4lRx6N0tLelRkD7d1-g4pQkDt0Z3HVFD9fGc425Kt57BFqED6u_b_lMJQzJrDbkGiqqzW0i9CGk5pFgbI);
   background-color: var(--background-color);
-  background-size: cover;
-  justify-content: center;
 }
-
+.wrapperonline {
+  margin: 0px auto;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: auto auto;
+  place-items: center;
+}
+.phoneapp {
+  height: 200px;
+}
 .online h3 {
   display: grid;
   grid-template-columns: 150px 60px auto;
@@ -366,6 +372,7 @@ header button:hover {
   transform: translateY(30px);
   transition: 0.2s ease-in-out;
 }
+/* footer */
 .copyright {
   color: #d5eded;
   padding: 10px;
