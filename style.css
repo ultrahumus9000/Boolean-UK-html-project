@@ -424,8 +424,7 @@ video {
   background-position: center cover;
   background-size: 250px 400px;
   z-index: 1;
-  /* display: none; */
-  position: sticky;
+  position: fixed;
   right: 30vw;
   bottom: 100px;
 }
