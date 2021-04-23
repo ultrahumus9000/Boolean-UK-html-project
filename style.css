@@ -587,5 +587,8 @@ footer div {
     footer div {
       margin-right: 0px;
     }
+    body {
+      height: 100vh;
+    }
   }
 }
