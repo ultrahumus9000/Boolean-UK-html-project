@@ -172,20 +172,18 @@ header button:hover {
   top: 50px;
 }
 .overview img {
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 120px;
 }
 .overview h2 {
   display: flex;
   align-items: center;
   gap: 10px;
   place-content: center;
-  background-color: lavender;
+  background-color: lightcoral;
+  color:var(--lighttext-color);
 }
-.overview img {
-  height: 50px;
-  width: 50px;
-}
+
 .wrapper {
   max-width: 1200px;
   margin: 40px auto;
@@ -200,10 +198,13 @@ header button:hover {
 }
 .wrapper article {
   margin-top: 30px;
-  padding: 100px 40px 50px 40px;
-  background: url(https://images.669pic.com/ele_banner2/9e9cbbd225a917144c7a99bf28d60600.jpg);
-  background-position: top;
+  padding: 50px 40px 50px 40px;
+  background: no-repeat url(https://images.wallpapersden.com/image/wxl-shanghai-city-china_70869.jpg);
+  background-size: cover;
+  text-shadow: 1px 1px 1px black;
+  color: var(--lighttext-color);
   height: fit-content;
+  box-shadow:lightgray 0px 0px 5px 5px;
 }
 /* overview finished */
 .wholecontent {
@@ -212,9 +213,10 @@ header button:hover {
   border: 2px solid black;
 }
 aside {
-  background: url(../image/backgroundshanzi.png);
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQlTW2kgIaBluiZ6XrTCpVcxANklqwo7ZEuA&usqp=CAU);
   background-position: center;
   padding: 100px 10px;
+  color: #eaf3f0;
 }
 
 aside li a {
@@ -261,28 +263,38 @@ aside li a:hover {
   max-width: 700px;
   grid-template-columns: repeat(auto-fit, 310px);
   gap: 10px;
-  background-color: blanchedalmond;
   place-items: center;
-  padding: 10px;
+  padding: 30px;
+  border-radius: 20px;
+  background: url(https://previews.123rf.com/images/elnurbabayev/elnurbabayev1801/elnurbabayev180100008/92684607-gold-circle-seamless-pattern-abstract-gold-geometric-modern-background-gold-dots-vector-illustration.jpg);
 }
 .dish {
   border-radius: 10px;
-  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9sB2l7LR7LMbetiHwDtsIxtmYXj7u8WDZQw&usqp=CAU);
-  color: var(--lighttext-color);
+  color: var(--darktext-color);
   display: grid;
   grid-template-rows: auto auto auto;
   place-content: center;
   text-align: center;
   gap: 5px;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
+  width: 230px;
+  height: 280px;
+  border-radius: 10%;
+  border: 4px solid lightseagreen;
+  padding: 20px auto;
+  transition: ease-in-out 0.2s;
+  background-color:snow;
+}
+.dish:hover{
+  transform: translateY(5px);
+  box-shadow: #20b2aa50 0px 0px 5px 3px;
+  background:#20b2aa20;
 }
 .dish img {
-  height: 150px;
+  height: 200px;
   width: 200px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 50%;
+  border: lightseagreen 2px solid;
 }
 .dish span {
   display: block;
