@@ -436,7 +436,7 @@ footer div {
 .stickychat {
   color: black;
   text-align: end;
-  position: sticky;
+  position: fixed;
   border: 2px solid #273540;
   display: grid;
   grid-template-columns: 30px 1fr;
@@ -447,7 +447,6 @@ footer div {
   padding: 5px 8px;
   border-radius: 15px;
   bottom: 50px;
-  /* left: 1300px; */
   right: 50px;
 }
 .copyright {
