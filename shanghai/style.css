@@ -9,16 +9,24 @@ html {
   --darktext-color: #273542;
   --lighttext-color: #c4e5ee;
 }
+body {
+  color: var(--darktext-color);
+  overflow: scroll;
+}
+li {
+  list-style: none;
+}
 header {
   display: grid;
   grid-template-columns: auto 1fr;
   color: #273542;
   padding: 5px;
-  background-color: #f3f3f350;
+  background-color: #f3f3f3;
   padding: 10px;
   width: 100vw;
   top: 0px;
   z-index: 3;
+  position: fixed;
 }
 h1 {
   font-family: "Zhi Mang Xing", cursive;
@@ -79,6 +87,8 @@ nav li {
 }
 .travelguide {
   margin-right: 10px;
+  background-color: #7fffd450;
+  border-radius: 10px;
 }
 .dropdown {
   position: fixed;
@@ -157,6 +167,267 @@ header button:hover {
   border: none;
 }
 /* header finished */
+.overview {
+  position: relative;
+  top: 50px;
+}
+.overview img {
+  height: 50px;
+  width: 50px;
+}
+.overview h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  place-content: center;
+  background-color: lavender;
+}
+.overview img {
+  height: 50px;
+  width: 50px;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 40px auto;
+}
+.promotevideo {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  text-align: justify;
+  padding-bottom: 40px;
+}
+.wrapper article {
+  margin-top: 30px;
+  padding: 100px 40px 50px 40px;
+  background: url(https://images.669pic.com/ele_banner2/9e9cbbd225a917144c7a99bf28d60600.jpg);
+  background-position: top;
+  height: fit-content;
+}
+/* overview finished */
+.wholecontent {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  border: 2px solid black;
+}
+aside {
+  background: url(../image/backgroundshanzi.png);
+  background-position: center;
+  padding: 100px 10px;
+}
+
+aside li a {
+  text-decoration: none;
+  color: inherit;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 5px;
+  width: 130px;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+}
+aside a img {
+  height: 50px;
+}
+aside li a:hover {
+  background-color: #483d8b90;
+  color: #c4e5ee;
+}
+/* aside finished */
+.content {
+  margin: 0px 50px;
+}
+.section {
+  display: grid;
+  justify-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.foodintro h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.food {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+
+  border-bottom: 2px solid black;
+}
+.menu-one {
+  display: grid;
+  max-width: 700px;
+  grid-template-columns: repeat(auto-fit, 310px);
+  gap: 10px;
+  background-color: blanchedalmond;
+  place-items: center;
+  padding: 10px;
+}
+.dish {
+  border-radius: 10px;
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9sB2l7LR7LMbetiHwDtsIxtmYXj7u8WDZQw&usqp=CAU);
+  color: var(--lighttext-color);
+  display: grid;
+  grid-template-rows: auto auto auto;
+  place-content: center;
+  text-align: center;
+  gap: 5px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+.dish img {
+  height: 150px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.dish span {
+  display: block;
+}
+/* food part finished */
+.interest {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+  border-bottom: 2px solid black;
+}
+.interest a {
+  color: #19b3ab;
+  transition: 0.2s ease-in-out;
+  padding: 5px 10px;
+  margin: 10px;
+}
+.interest a:hover {
+  background-color: lightcoral;
+  color: #c4e5ee;
+  border-radius: 5px;
+}
+.container-attractions {
+  margin: 0px 100px;
+}
+.card {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 15px;
+  border: 2px solid lightseagreen;
+  padding: 15px;
+  width: fit-content;
+  border-radius: 20px;
+  justify-items: center;
+  margin-bottom: 10px;
+  transition: ease-out 0.2s;
+}
+.card:hover {
+  filter: brightness(1.1);
+  transform: translateX(4px);
+}
+.card-img {
+  height: 180px;
+  width: 220px;
+  object-fit: cover;
+}
+.card .text {
+  display: grid;
+  grid-template-rows: 20px 20px 1fr;
+  gap: 12px;
+  align-items: flex-start;
+}
+.card li {
+  display: inline-block;
+}
+.card li img {
+  height: 20px;
+  width: 20px;
+}
+.larger {
+  transform: scale(1.25) translateY(1px);
+}
+.profilep {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  align-items: center;
+}
+.profile-img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+/* interest finished */
+.route-card {
+  display: grid;
+  gap: 10px;
+  justify-items: center;
+  background-color: beige;
+  border-radius: 20px;
+  padding: 20px;
+}
+.route-img {
+  height: 200px;
+  width: 230px;
+  object-fit: cover;
+}
+.route-like {
+  height: 35px;
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  border-radius: 50%;
+  padding: 5px;
+  transition: ease-out 0.2s;
+  z-index: 1;
+}
+.route-like:hover {
+  background-color: lightpink;
+}
+.uptext {
+  position: absolute;
+  bottom: 0px;
+  padding: 20px 20px;
+  text-align: center;
+  color: beige;
+  text-shadow: 1px 1px 0px black;
+  visibility: hidden;
+  transition: ease-out 0.2s;
+  opacity: 0;
+  background-color: #00000090;
+  height: 0%;
+}
+
+.route-card section:hover .uptext {
+  visibility: visible;
+  opacity: 1;
+  height: 50%;
+}
+.route-card section:hover .route-img {
+  filter: brightness(1.2);
+}
+
+.route-card a {
+  color: lightseagreen;
+}
+.route-card section {
+  display: grid;
+  max-width: 230px;
+  position: relative;
+}
+.route-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  gap: 20px;
+}
+/* footer */
+.copyright {
+  color: #d5eded;
+  padding: 10px;
+  background-color: #27354090;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 0.8rem;
+}
 @media screen and (max-width: 1350px) {
   nav ul,
   nav button {
@@ -165,4 +436,39 @@ header button:hover {
   nav img {
     display: block;
   }
+  .foodintro {
+    display: none;
+  }
+
+  .route-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  @media screen and (max-width: 1150px) {
+    article {
+      display: none;
+    }
+    .promotevideo {
+     display: grid;
+     place-content: center;
+  }
+  @media screen and (max-width: 865px) {
+    .content{
+   
+    }
+    .section{
+      place-items: center;
+      max-width: 450px;
+    }
+    .menu-one{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    .container-attractions{
+      margin:0px
+    }
+  
+  }
 }
+

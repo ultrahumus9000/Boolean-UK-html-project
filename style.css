@@ -76,6 +76,7 @@ nav li {
 .travelguide {
   padding: 10px;
 }
+
 .travelguide {
   margin-right: 10px;
 }
@@ -384,9 +385,9 @@ video {
   width: 100px;
   object-fit: cover;
   border-radius: 50%;
-  /* border: 3px solid#ed5736; */
   box-shadow: 0px 0px 2px 3px #ed5736;
 }
+/* footer start */
 footer {
   position: relative;
   background: no-repeat
@@ -396,9 +397,13 @@ footer {
   color: var(--darktext-color);
   padding-top: 40px;
 }
+.footertitle h2 {
+  margin-bottom: 10px;
+}
 footer div {
   width: 500px;
   margin-right: 100px;
+  margin-bottom: 10px;
 }
 .footermain {
   display: grid;
