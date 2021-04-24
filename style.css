@@ -591,4 +591,35 @@ footer div {
       height: 100vh;
     }
   }
+  @media screen and (max-width: 400px) {
+    header {
+      background-color: lavender;
+      height: 70px;
+    }
+    .websitetitle {
+      position: fixed;
+    }
+    nav img {
+      position: fixed;
+      top: 10px;
+      right: 0px;
+    }
+    .socialmedias {
+      display: none;
+    }
+    .menu {
+      transform: translateX(-10px);
+    }
+    nav ul {
+      display: block;
+      position: fixed;
+      bottom: 0px;
+      background-color: lavender;
+      width: 100vw;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      margin-left: 0px;
+    }
+  }
 }
